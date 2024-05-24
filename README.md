@@ -4,7 +4,7 @@
     <title>Пример веб-страницы</title>
 </head>
 <body>
-    <h1> Good Dayy Day 0184 !!!</h2>
+    <h1> Good Dayy Day 024 !!!</h2>
     <p>Это пример веб-страницы.</p>
 </body>
 </html>
