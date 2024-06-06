@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Пример веб-страницы</title>
-</head>
-<body>
-    <h1> Good Dayy Day 0241 !!!</h1w>
-    <p>Это пример веб-страницы.</p>
-</body>05
-</html>
+jobs:
+  minimal-checkout:
+    docker:
+      - image: cimg/base:current
+    resource_class: small
+    environment:
+      GIT_SSH_COMMAND: ssh -v
+    steps:
+      - checkout-arangodb:
+          with-submodules: false
+          destination: "/home/circleci/project"
+      - checkout-enterprise:
+          destination: "/home/circleci/project/enterprise"
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
 
