@@ -4,7 +4,7 @@ jobs:
       - image: cimg/base:current
     resource_class: small
     environment:
-      GIT_SSH_COMMAND: ssh -v
+      GIT_SSH_COMMAND: ssh -vv
     steps:
       - checkout-arangodb:
           with-submodules: false
