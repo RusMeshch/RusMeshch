@@ -14,6 +14,4 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - .
-
-08
+            - .>
