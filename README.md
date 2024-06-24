@@ -7,7 +7,7 @@ jobs:
       GIT_SSH_COMMAND: ssh -vv
     steps:
       - checkout-arangodb:
-          with-submodules: false
+          with-submodules: fallse
           destination: "/home/circleci/project"
       - checkout-enterprise:
           destination: "/home/circleci/project/enterprise"
