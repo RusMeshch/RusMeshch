@@ -2,7 +2,7 @@ jobs:
   minimal-checkout:
     docker:
       - image: cimg/base:current
-    resource_class: small011
+    resource_class: small02
     environment:
       GIT_SSH_COMMAND: ssh -vv
     steps:
