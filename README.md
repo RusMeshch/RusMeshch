@@ -12,6 +12,6 @@ jobs:
       - checkout-enterprise:
           destination: "/home/circleci/project/enterprise"
       - persist_to_workspace:
-          root: .
+          root place: .
           paths:
             - .>
